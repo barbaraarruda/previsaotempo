@@ -1,3 +1,4 @@
 <i class="ph ph-magnifying-glass"></i>
 <i class="ph ph-drop-half-bottom"></i>
 <i class="ph ph-wind"></i>
+<i class="ph ph-map-pin"></i>
