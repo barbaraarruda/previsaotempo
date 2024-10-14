@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qual o clima?</title>
+    <title>Clima Agora</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <span class="background"></span>
     <div class="card">
         <form>
             <div>
@@ -34,21 +35,27 @@
             <h2 id="local">Goiânia</h2>
         </main>
         <footer>
-            <div class="block">
-                <i class="ph ph-drop-half-bottom"></i>
-                <div>
-                    <strong id="umidade">95%</strong>
-                    <p>Umidade</p>
+            <div class="dataApp">
+                <div class="block">
+                    <i class="ph ph-drop-half-bottom"></i>
+                    <div>
+                        <strong id="umidade">95%</strong>
+                        <p>Umidade</p>
+                    </div>
+                
                 </div>
-               
+                <div class="block">
+                    <i class="ph ph-wind"></i>
+                    <div>
+                        <strong id="velocidadeVento">20 km/h</strong>
+                        <p>Vel. Vento</p>
+                    </div>
+                
+                </div>
             </div>
-            <div class="block">
-                <i class="ph ph-wind"></i>
-                <div>
-                    <strong id="velocidade-vento">20 km/h</strong>
-                    <p>Vel. Vento</p>
-                </div>
             
+            <div class="assinatura">
+                <p>&copy; <i class="ph ph-star" style="color: pink"></i> <a href="https://saturncode.vercel.app/" style="font-weight: lighter; text-decoration: none;">Saturn Code</a> | 2024</p>
             </div>
         </footer>
     </div>

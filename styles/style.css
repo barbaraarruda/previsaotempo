@@ -24,6 +24,15 @@ body{
     background: #333;
 }
 
+.background {
+    position: fixed;
+    inset: 0;
+    background-image: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .card{
     width: 500px;
     height: auto;
@@ -34,4 +43,38 @@ body{
     row-gap: 24px;
     border: 1px solid var(--border);
     border-radius: 12px;
+    z-index: 1;
+    background: rbga(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+#umidade, #velocidadeVento, #temperatira {
+    font-weight: 500;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 16px;
+        margin: 16px;
+    }
+
+    #umidade,
+    #velocidadeVento,
+    #temperatira {
+        font-size: 1.5rem;
+    }
 }
